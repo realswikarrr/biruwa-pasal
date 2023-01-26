@@ -5,7 +5,7 @@ import { AiFillDingtalkSquare } from "react-icons/ai";
 
 export function HomePageLast() {
   return (
-    <footer className="footer mt-20 p-10 bg-neutral text-neutral-content bg-green-400 w-full text-white mb-0 flex justify-between flex-col lg:flex-row">
+    <footer className="footer mt-20 lg:p-10 bg-neutral text-neutral-content bg-green-400 w-full text-white mb-0 flex justify-between flex-col lg:flex-row">
       <div className="ml-10 lg:mr-20 py-10 px-10 flex  space-x-2 ">
         <div>
           <AiFillDingtalkSquare className="text-black" />

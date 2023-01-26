@@ -21,7 +21,7 @@ export function HomePage() {
               </p>
               <a
                 href="#"
-                class="inline-flex bg-green-500 items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 "
+                class="inline-flex mb-2 lg:mb-0 bg-green-500 items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 "
               >
                 Shop Now
               </a>
@@ -34,7 +34,7 @@ export function HomePage() {
             </div>
             <div class="lg:mt-0 lg:col-span-5  lg:ml-40 lg:flex mt-5 ">
               <img
-                className="rounded-md h-fit "
+                className="rounded-md lg:h-fit h-auto"
                 src="https://images.unsplash.com/photo-1596605872817-7615f7ea2aac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zmxvd2VycyUyMG5hdHVyZXxlbnwwfHwwfHw%3D&w=1000&q=80"
                 alt="mockup"
               />
@@ -43,14 +43,14 @@ export function HomePage() {
         </section>
       </div>
       <div className="mt-20">
-        <h1 className="mt-4 text-2xl font-bold rounded-r w-48 border-4 border-b-yellow-600 border-t-0 border-r-0 border-l-0 ">
-          <span className=" block w-[400px] ">
+        <h1 className="mt-4 text-2xl font-bold rounded-r lg:w-48 w-auto border-4 border-b-yellow-600 border-t-0 border-r-0 border-l-0 ">
+          <span className=" lg:block lg:w-[400px] w-auto ">
             Explore Our Popular Categories
           </span>
         </h1>
       </div>
-      <div class="grid grid-cols-3 gap-4 mt-4">
-        <div class="col-span-2 ">
+      <div class="lg:grid grid-cols-3 gap-4 mt-4">
+        <div class="col-span-2 mt-2 lg:mt-0">
           <img
             className="rounded-md h-60 w-full"
             src="https://phsonline.org/uploads/attachments/cl4o8j4om379fthra39rg21n7-2023-flowershow-edit.0.46.1440.753.full.jpg"
@@ -59,19 +59,19 @@ export function HomePage() {
         </div>
         <div class="">
           <img
-            className="rounded-md h-60 "
+            className="rounded-md h-60 mt-2 lg:mt-0 "
             src="https://phsonline.org/uploads/attachments/cl4o8j4om379fthra39rg21n7-2023-flowershow-edit.0.46.1440.753.full.jpg"
             alt=""
           />
         </div>
         <div class="">
           <img
-            className="rounded-md h-60 "
+            className="rounded-md h-60 mt-2 lg:mt-0 "
             src="https://phsonline.org/uploads/attachments/cl4o8j4om379fthra39rg21n7-2023-flowershow-edit.0.46.1440.753.full.jpg"
             alt=""
           />
         </div>
-        <div class="col-span-2">
+        <div class="col-span-2 mt-2 lg:mt-0">
           <img
             className="rounded-md h-60  w-full"
             src="https://phsonline.org/uploads/attachments/cl4o8j4om379fthra39rg21n7-2023-flowershow-edit.0.46.1440.753.full.jpg"

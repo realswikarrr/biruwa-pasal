@@ -15,7 +15,7 @@ export default function NavBar() {
         </a>
 
         <div className=" w-auto md:block md:w-auto" id="navbar-default">
-          <ul className="flex flex-row justify-center items-center space-x-5 mt-0  rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white ">
+          <ul className="flex flex-row justify-center items-center lg:space-x-5 space-x-2 mt-0  rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white ">
             <li>
               <a
                 href="/"
@@ -36,12 +36,12 @@ export default function NavBar() {
             <li>
               <a
                 href="/blog"
-                className="  md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 "
+                className="  md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 mr-4 lg:mr-0 "
               >
                 Blog
               </a>
             </li>
-            <div className="flex flex-row space-x-3 text-base">
+            <div className="flex flex-row lg:space-x-3 space-x-2 text-base">
               <li>
                 <a
                   href="#"

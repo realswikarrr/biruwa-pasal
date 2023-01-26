@@ -6,7 +6,7 @@ import SignUp from "../SignUp";
 export default function login() {
   return (
     <>
-      <div className="mr-20 ml-20 mt-4">
+      <div className="lg:mr-20 lg:ml-20 mt-4 mr-2 ml-2">
         <NavBar />
         <SignUp />
       </div>
