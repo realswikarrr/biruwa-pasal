@@ -1,10 +1,20 @@
+"use client";
+
+import { useState } from "react";
 import {
   AiOutlineSearch,
   AiOutlineUser,
   AiOutlineShoppingCart,
+  AiOutlineMenu,
 } from "react-icons/ai";
 
 export default function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="bg-white border-gray-200 ">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
@@ -16,7 +26,7 @@ export default function NavBar() {
 
         <div className=" w-auto md:block md:w-auto" id="navbar-default">
           <ul className="flex flex-row justify-center items-center lg:space-x-5 space-x-2 mt-0  rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white ">
-            <li>
+            <li className={`${isOpen ? "block" : "hidden"} lg:block`}>
               <a
                 href="/"
                 className="rounded md:bg-transparent md:text-green-700 md:p-0 "
@@ -25,7 +35,7 @@ export default function NavBar() {
                 Home
               </a>
             </li>
-            <li>
+            <li className={`${isOpen ? "block" : "hidden"} lg:block`}>
               <a
                 href="/seeds"
                 className="  md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 "
@@ -33,10 +43,10 @@ export default function NavBar() {
                 Seeds
               </a>
             </li>
-            <li>
+            <li className={`${isOpen ? "block" : "hidden"} lg:block`}>
               <a
                 href="/blog"
-                className="  md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 mr-4 lg:mr-0 "
+                className="  md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 mr-2 lg:mr-0 "
               >
                 Blog
               </a>
@@ -64,6 +74,14 @@ export default function NavBar() {
                   className="  md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 "
                 >
                   <AiOutlineShoppingCart />
+                </a>
+              </li>
+              <li>
+                <a
+                  onClick={handleClick}
+                  className="lg:hidden md:hidden md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 "
+                >
+                  <AiOutlineMenu />
                 </a>
               </li>
             </div>

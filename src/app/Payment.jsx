@@ -66,7 +66,7 @@ export default function Payment() {
             <input
               type="email"
               placeholder="Name On Card"
-              className=" focus:outline-none border border-gray-400 p-1  w-2/3 rounded-lg"
+              className=" focus:outline-none border border-gray-400 p-1  lg:w-2/3 rounded-lg"
             />
           </div>
           <div className="mt-4 flex flex-col lg:flex-row lg:space-x-10 ">
@@ -75,7 +75,7 @@ export default function Payment() {
               <input
                 type="email"
                 placeholder="State / Province"
-                className=" focus:outline-none border border-gray-400 p-1 w-96 rounded-lg"
+                className=" focus:outline-none border border-gray-400 p-1 lg:w-96 rounded-lg"
               />
             </div>
 
@@ -101,7 +101,7 @@ export default function Payment() {
           <div className="mt-5 mb-20">
             <a
               href="#"
-              class="inline-flex bg-green-500 items-center justify-center lg:w-2/3 w-full  px-10 py-2 mr-3 mt-2 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 "
+              class="inline-flex bg-green-500 items-center justify-center lg:w-2/3 w-full  px-10 py-2 lg:mr-3 mt-2 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 "
             >
               Complete Payment
             </a>

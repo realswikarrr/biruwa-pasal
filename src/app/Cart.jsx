@@ -119,19 +119,22 @@ export default function Cart() {
       </section>
 
       <div className="flex flex-col lg:flex-row justify-between">
-        <h1>Sub Total</h1>
-        <div className="lg:hidden">
-          <h1>Rs 1099</h1>
+        <h1 className="hidden lg:block">Sub Total</h1>
+        <div className="flex flex-row justify-between lg:hidden ">
+          <h1>Sub Total</h1>
+          <div className="lg:hidden">
+            <h1>Rs 1099</h1>
+          </div>
         </div>
         <div className="lg:mt-8">
           <a
             href="/payment"
-            class="inline-flex focus:outline-none bg-green-500 items-center justify-center lg:px-96 px-10 py-2 mr-3 mt-2 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 "
+            class="inline-flex focus:outline-none bg-green-500 items-center justify-center w-full lg:px-96  py-2 mr-3 mt-2 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 "
           >
             <AiOutlineLock className="mr-2" /> Checkout
           </a>
           <div className="text-center text-sm text-gray-400 mt-2 mb-5">
-            <span className="flex items-center lg:justify-center space-x-2">
+            <span className="flex items-center justify-center space-x-2">
               <a href="/">
                 <span> Continue Shopping</span>
               </a>
