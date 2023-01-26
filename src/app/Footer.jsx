@@ -52,6 +52,7 @@ export function Footer() {
         </div>
       </footer>
 
+      {/* Footer For Mobile */}
       <footer className="footer lg:hidden  p-5 bg-neutral text-neutral-content bg-black w-full text-white mb-0 flex justify-between flex-col lg:flex-row">
         <div className="mt-5 ">
           <a
